@@ -18,10 +18,21 @@ yarn install
 ```
 docker-compose up -d
 ```
-5. Rebuild the database with the seed
+
+5. Clone the file __.env.template__ and rename the copy to __.env__
+
+6. Fill the environment variables defined in the ```.env```
+
+7. Run the app in dev mode:
 ```
-  http://localhost/3000/api/v2/seed  
+yarn run start:dev
 ```
+
+8. Rebuild the database with the seed
+```
+  http://localhost:3000/api/v2/seed  
+```
+
 
 
 ## Stack used
