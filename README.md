@@ -34,6 +34,17 @@ yarn run start:dev
 ```
 
 
+# Production Build
+1. Create the file ```env.prod```
+2. Fill in the environment variables of prod.
+3. Create the new image 
+```
+Build:
+  docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+
+Run
+  docker-compose -f docker-compose.prod.yaml --env-file .env.prod up
+```
 
 ## Stack used
 * MongoDB
